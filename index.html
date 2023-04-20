@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Timer App</title>
+</head>
+
+<body>
+  <div class="flex flex-col mt-56 min-w-max w-96 h-52 mx-auto">
+    <div class="mx-auto flex">
+      <span id="min" class="w-24 h-10 mr-5 bg-rose-200 flex justify-center items-center text-2xl rounded-md ">0</span>
+      <span id="dots" class="flex justify-center items-center text-3xl">:</span>
+      <span id="sec" class="w-24 h-10 ml-5 bg-rose-200 flex justify-center items-center text-2xl rounded-md ">0</span>
+    </div>
+    <div class="mx-auto mt-5">
+      <button id="start" class="w-24 h-10 rounded-md  text-xl text-white bg-green-400">Start</button>
+      <button id="stop" class="w-24 h-10 bg-red-400 rounded-md text-white text-xl">Stop</button>
+      <button id="reset" class="w-24 h-10 bg-blue-400 rounded-md text-white text-xl">Reset</button>
+    </div>
+
+    <audio id="myAudio">
+      <source src="alert.mp3" type="audio/mp3">
+    </audio>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+
+
+
+
+</body>
+
+</html>
